@@ -1,0 +1,19 @@
+{
+    "name": "Helpers",
+    "description": "This package contains all helpful methods to help on texts, arrays, objects and number.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hamed Ghasempour",
+            "email": "hamedghasempour@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "HGh\\Helpers\\": "src"
+        }
+    }
+}
