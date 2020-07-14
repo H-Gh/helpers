@@ -1,18 +1,6 @@
 <?php
 
-/**
- * This class contains all methods that helps us on objects
- * PHP version >= 7.0
- *
- * @category Helpers
- * @package  Helpers
- * @author   Hamed Ghasempour <hamedghasempour@gmail.com>
- * @license  http://opensource.org/licenses/gpl-license.php GNU Public License
- * @version  GIT: <git_id>
- * @link     null
- */
-
-namespace BetPress\Helpers;
+namespace HGh\Helpers;
 
 use stdClass;
 
@@ -20,10 +8,10 @@ use stdClass;
  * This class contains all methods that helps us on objects
  * PHP version >= 7.0
  *
- * @category Helpers
+ * @category Helper
  * @package  Helpers
  * @author   Hamed Ghasempour <hamedghasempour@gmail.com>
- * @license  http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @license  MIT https://opensource.org/licenses/MIT
  * @link     null
  */
 class ObjectHelper
