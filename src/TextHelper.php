@@ -1,27 +1,15 @@
 <?php
 
-/**
- * This class will help us on texts
- * PHP version >= 7.0
- *
- * @category Helpers
- * @package  Helpers
- * @author   Hamed Ghasempour <hamedghasempour@gmail.com>
- * @license  http://opensource.org/licenses/gpl-license.php GNU Public License
- * @version  GIT: <git_id>
- * @link     null
- */
-
-namespace BetPress\Helpers;
+namespace HGh\Helpers;
 
 /**
  * This class will help us on texts
  * PHP version >= 7.0
  *
- * @category Helpers
+ * @category Helper
  * @package  Helpers
  * @author   Hamed Ghasempour <hamedghasempour@gmail.com>
- * @license  http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @license  MIT https://opensource.org/licenses/MIT
  * @link     null
  */
 class TextHelper
