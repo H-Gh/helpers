@@ -1,27 +1,15 @@
 <?php
 
-/**
- * This class contains all methods that helps us on arrays
- * PHP version >= 7.0
- *
- * @category Helpers
- * @package  Helpers
- * @author   Hamed Ghasempour <hamedghasempour@gmail.com>
- * @license  http://opensource.org/licenses/gpl-license.php GNU Public License
- * @version  GIT: <git_id>
- * @link     null
- */
-
-namespace BetPress\Helpers;
+namespace HGh\Helpers;
 
 /**
  * This class contains all methods that helps us on arrays
  * PHP version >= 7.0
  *
- * @category Helpers
+ * @category Helper
  * @package  Helpers
  * @author   Hamed Ghasempour <hamedghasempour@gmail.com>
- * @license  http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @license  MIT https://opensource.org/licenses/MIT
  * @link     null
  */
 class ArrayHelper
@@ -65,5 +53,35 @@ class ArrayHelper
             unset($array[$oldIndex]);
         }
         return $array;
+    }
+
+    /**
+     * @param array  $dataArray The array
+     * @param string $itemPrefix
+     * @param string $wrapper
+     *
+     * @return string
+     */
+    public static function implode($dataArray, $itemPrefix = "", $wrapper = "")
+    {
+        return "($itemPrefix$wrapper" . implode("$wrapper,$wrapper$itemPrefix", $dataArray) . "$wrapper)";
+    }
+
+    /**
+     * Add prefix to all the keys of a specific array
+     *
+     * @param array  $dataArray The array
+     * @param string $prefix    The prefix to add to key
+     *
+     * @return mixed
+     */
+    public static function addPrefixToIndexes(array $dataArray, $prefix)
+    {
+        foreach ($dataArray as $key => $item) {
+            $dataArray[$prefix . $key] = $item;
+            unset($dataArray[$key]);
+        }
+
+        return $dataArray;
     }
 }
